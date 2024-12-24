@@ -1,0 +1,88 @@
+/* pages/drone/drone.wxss */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+}
+
+.video-area {
+  flex: 1;
+  width: 100%;
+  background: #000;
+  position: relative;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+}
+
+.control-area {
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 40rpx 40rpx 0 0;
+  box-shadow: 0 -2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.zoom-controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100rpx;
+  margin-bottom: 30rpx;
+}
+
+.direction-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.direction-row {
+  display: flex;
+  justify-content: center;
+  gap: 100rpx;
+  margin: 20rpx 0;
+}
+
+.direction-btn {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  font-size: 40rpx;
+}
+
+.camera-controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 60rpx;
+}
+
+.control-btn {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.control-btn image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-bottom: 10rpx;
+}
+
+.control-btn .label {
+  font-size: 24rpx;
+  color: #666;
+}

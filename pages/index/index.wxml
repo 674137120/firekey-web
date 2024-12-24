@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="login-container">
+    <view class="logo">
+      <text class="title">"探火者"</text>
+      <text class="subtitle">--智能监测领航者</text>
+    </view>
+
+    <view class="login-form">
+      <view class="input-group">
+        <input type="text" placeholder="用户名" model:value="{{username}}" />
+      </view>
+      
+      <view class="input-group">
+        <input type="password" placeholder="密码" model:value="{{password}}" />
+      </view>
+
+      <view class="form-footer">
+        <text class="forget-pwd" bindtap="onForgetPassword">忘记密码？</text>
+      </view>
+
+      <button class="login-btn" bindtap="handleLogin">登入</button>
+    </view>
+
+    <view class="other-login">
+      <view class="divider">
+        <text>其他登录方式</text>
+      </view>
+      <view class="login-methods">
+        <button class="icon-btn" bindtap="handleWechatLogin">
+          <image src="/assets/icons/wechat.png" mode="aspectFit"></image>
+        </button>
+        <button class="icon-btn" bindtap="handlePhoneLogin">
+          <image src="/assets/icons/phone.png" mode="aspectFit"></image>
+        </button>
+      </view>
+    </view>
+  </view>
+</scroll-view>

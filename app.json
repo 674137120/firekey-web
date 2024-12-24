@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/environment/environment",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/drone/drone",
+    "pages/location/location"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "环境监测",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f6f6f6"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要获取您的地理位置用于环境数据监测"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "onLocationChange",
+    "startLocationUpdate",
+    "chooseLocation"
+  ],
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

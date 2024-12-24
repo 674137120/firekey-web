@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="header">
+    <text class="location">{{location}}</text>
+  </view>
+
+  <view class="card-grid">
+    <!-- 温度卡片 -->
+    <view class="card temperature">
+      <view class="value">{{environmentData.temperature}}°C</view>
+      <view class="label">温度</view>
+    </view>
+    
+    <!-- 湿度卡片 -->
+    <view class="card humidity">
+      <view class="value">{{environmentData.humidity}}%</view>
+      <view class="label">湿度</view>
+    </view>
+    
+    <!-- PM2.5卡片 -->
+    <view class="card pm25">
+      <view class="value">{{environmentData.pm25}}</view>
+      <view class="label">PM2.5</view>
+    </view>
+    
+    <!-- 风向卡片 -->
+    <view class="card wind">
+      <view class="value">{{environmentData.wind}}</view>
+      <view class="label">风向风力</view>
+    </view>
+  </view>
+
+  <!-- 功能按钮区 -->
+  <view class="function-buttons">
+    <view class="function-btn" bindtap="onRefresh">
+      <text>实时监测</text>
+    </view>
+
+    <view class="function-btn" bindtap="onChooseLocation">
+      <text>地区</text>
+    </view>
+  </view>
+</view> 

@@ -1,0 +1,24 @@
+<view class="recovery-container">
+  <view class="form">
+    <view class="input-group">
+      <input type="number" placeholder="请输入手机号" model:value="{{phone}}" maxlength="11" />
+    </view>
+    
+    <view class="input-group verification">
+      <input type="number" placeholder="验证码" model:value="{{code}}" maxlength="6" />
+      <button class="send-code-btn" bindtap="sendCode" disabled="{{counting}}">
+        {{counting ? countDown + 's' : '获取验证码'}}
+      </button>
+    </view>
+
+    <view class="input-group">
+      <input type="password" placeholder="新密码" model:value="{{newPassword}}" />
+    </view>
+
+    <view class="input-group">
+      <input type="password" placeholder="确认新密码" model:value="{{confirmPassword}}" />
+    </view>
+
+    <button class="submit-btn" bindtap="handleSubmit">重置密码</button>
+  </view>
+</view> 

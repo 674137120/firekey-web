@@ -1,0 +1,56 @@
+<view class="container">
+  <!-- 摄像头预览区域 -->
+  <view class="video-area">
+    <camera 
+      device-position="{{devicePosition}}"
+      flash="off"
+      binderror="onCameraError"
+      style="width: 100%; height: 100%;">
+    </camera>
+  </view>
+
+  <!-- 控制区域 -->
+  <view class="control-area">
+    <!-- 缩放控制 -->
+    <view class="zoom-controls">
+      <view class="control-btn" bindtap="onZoomIn">
+        <text>+</text>
+        <text class="label">放大</text>
+      </view>
+      <view class="control-btn" bindtap="onZoomOut">
+        <text>-</text>
+        <text class="label">缩小</text>
+      </view>
+    </view>
+
+    <!-- 方向控制 -->
+    <view class="direction-controls">
+      <view class="direction-btn up" bindtap="onDirectionControl" data-direction="up">
+        <text>⬆</text>
+      </view>
+      <view class="direction-row">
+        <view class="direction-btn left" bindtap="onDirectionControl" data-direction="left">
+          <text>⬅</text>
+        </view>
+        <view class="direction-btn right" bindtap="onDirectionControl" data-direction="right">
+          <text>➡</text>
+        </view>
+      </view>
+      <view class="direction-btn down" bindtap="onDirectionControl" data-direction="down">
+        <text>⬇</text>
+      </view>
+    </view>
+
+    <!-- 拍照/切换摄像头控制 -->
+    <view class="camera-controls">
+      <view class="control-btn" bindtap="onTakePhoto">
+        <text class="camera-icon">📷</text>
+        <text class="label">拍照</text>
+      </view>
+      <view class="control-btn" bindtap="onPlayback">
+        <text class="camera-icon">🔄</text>
+        <text class="label">切换</text>
+      </view>
+    </view>
+  </view>
+</view> 

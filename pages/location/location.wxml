@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="search-box">
+    <input 
+      type="text" 
+      placeholder="搜索地点" 
+      bindinput="onSearch"
+      value="{{searchValue}}"
+    />
+  </view>
+
+  <view class="search-results">
+    <view 
+      class="result-item" 
+      wx:for="{{searchResults}}" 
+      wx:key="id"
+      bindtap="onSelectLocation"
+      data-location="{{item}}"
+    >
+      <view class="name">{{item.name}}</view>
+      <view class="address">{{item.address}}</view>
+    </view>
+  </view>
+</view> 

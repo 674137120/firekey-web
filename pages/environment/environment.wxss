@@ -1,0 +1,102 @@
+.container {
+  min-height: 100vh;
+  background: #f6f6f6;
+  padding: 0;
+}
+
+.header {
+  background: linear-gradient(180deg, #8BC34A 0%, #f6f6f6 100%);
+  padding: 40rpx 0;
+  text-align: center;
+  border-radius: 0 0 40rpx 40rpx;
+}
+
+.location {
+  color: #333;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.card-grid {
+  padding: 30rpx;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+  margin-top: -40rpx;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  position: relative;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+  min-height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .value {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.card .label {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.card .icon {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 48rpx;
+  height: 48rpx;
+  opacity: 0.6;
+}
+
+.temperature {
+  background: linear-gradient(135deg, #FFE4E1, #FFF0F0);
+}
+
+.humidity {
+  background: linear-gradient(135deg, #E3F2FD, #F0F8FF);
+}
+
+.pm25 {
+  background: linear-gradient(135deg, #E8F5E9, #F1F8E9);
+}
+
+.wind {
+  background: linear-gradient(135deg, #FFF3E0, #FFF8E1);
+}
+
+.function-buttons {
+  padding: 30rpx;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+}
+
+.function-btn {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+
+.function-btn image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+
+.function-btn text {
+  color: #333;
+  font-size: 28rpx;
+} 
